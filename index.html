@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testing Page</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script>
+
+
+        $(window).on('load resize', function () {
+
+            var navWidth = document.getElementById("nav").offsetWidth;
+            var mainWidth = document.getElementById("main").offsetWidth;
+            var panelWidth = document.getElementById("panel").offsetWidth;
+            var totalWidth = navWidth + mainWidth + panelWidth;
+
+            $('#nav').html(navWidth + "px");
+            $('#main').html(mainWidth + "px");
+            $('#panel').html(panelWidth + "px | vw = " + totalWidth + "<br><h4>Help Panel</h4>");
+
+
+        });
+
+
+    </script>
+    <style>
+
+    .nav, .main, .panel{
+        height: 100vh;
+        font-size: 11px;
+        font-family: Arial;
+        padding:10px;
+    }
+
+    .nav{
+        background-color: #4F5661;
+        display: none;
+        color: #FFF;
+    }
+
+    .main{
+        background-color: #1f2021;
+        margin: 0;
+        color: #FFF;
+        width: 5%;
+    }
+
+    .panel{
+        background-color: #F0F4F7;
+        position: absolute;
+        right:0;
+        top:0;
+        width: 95%;
+    }
+
+
+
+
+    @media (min-width: 576px) {
+
+        .nav{
+            display:none;
+        }
+        .main{
+            background-color: #1f2021;
+            margin: 0;
+            width: 20%;
+        }
+        .panel{
+            position: absolute;
+            right:0;
+            top:0;
+            width: 80%;
+        }
+    }
+
+
+    @media (min-width: 768px) {
+        .nav{
+            display:none;
+        }
+        .main{
+            background-color: #1f2021;
+            margin: 0;
+            width:40%;
+        }
+        .panel{
+            position: absolute;
+            right:0;
+            top:0;
+            width: 60%;
+        }
+
+    }
+
+
+    @media (min-width: 992px) {
+        .nav{
+            display:none;
+        }
+        .main{
+            background-color: #1f2021;
+            margin: 0;
+            width:60%;
+        }
+        .panel{
+            position: absolute;
+            right:0;
+            top:0;
+            width: 40%;
+        }
+
+    }
+
+
+    @media (min-width: 1200px) {
+      .nav{
+          display: unset;
+          position:absolute;
+          left:0;
+          width: 96px;
+      }
+      .main{
+            margin: 0 96px;
+            background-color: white;
+          color:#000;
+        }
+      .panel{
+          position: absolute;
+          right:0;
+          top:0;
+          width: 32%;
+      }
+    }
+
+    @media (min-width: 1400px) {
+        /* panel is at 800, so set it px width */
+        .nav{
+            display: unset;
+            position:absolute;
+            left:0;
+            width: 156px;
+        }
+        .main{
+            margin: 0 156px;
+            background-color: white;
+            color:#000;
+        }
+        .panel{
+            position: absolute;
+            right:0;
+            top:0;
+            width: 32%;
+        }
+
+
+
+        @media (min-width: 2350px) {
+        /* panel is at 800, so set it px width */
+        .nav{
+            display: unset;
+            position:absolute;
+            left:0;
+            width: 96px;
+        }
+        .main{
+            margin: 0 96px;
+            background-color: white;
+            color:#000;
+        }
+        .panel{
+            position: absolute;
+            right:0;
+            top:0;
+            width: 752px;
+        }
+
+    }
+
+
+    </style>
+
+
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div id="nav" class="nav"></div>
+        <div id="main" class="main"></div>
+        <div id="panel" class="panel"></div>
+    </div>
+
+</div>
+
+
+
+</body>
+</html>
