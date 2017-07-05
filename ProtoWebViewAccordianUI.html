@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script>
+
+        $( document ).ready(function() {
+            $('.title').click(function(){
+                $(this).next( ".content" ).slideToggle('fast');
+            });
+        });
+
+
+
+
+    </script>
+    <style>
+        .expando-container{
+            padding:20px;
+            border-top: 1px solid #DFDFDF;
+            display:block;
+        }
+        div.expando{
+            border-bottom: 1px solid #DFDFDF;
+            padding: 10px 0 10px 0;
+            font-size:16px;
+            font-family: "AvenirNext forINTUIT";
+            color: #1f2021;
+        }
+        div.title{
+            display:block;
+            color: #34B8F4;
+        }
+        div.content {
+            display:none;
+        }
+    </style>
+
+
+</head>
+<body>
+
+<div class="expando-container">
+    <div class="expando">
+        <div class="title">Getting started</div>
+        <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit, leo vel gravida aliquam, tortor orci auctor lacus, eu rutrum libero leo id mi. Integer non lorem urna. Nam eros ipsum, placerat nec massa eget, vehicula auctor nibh. Donec non porta dui. Sed ac neque lorem. Nam eget fringilla leo. Sed eget leo turpis. Nam erat felis, porttitor nec lorem vitae, porta sodales lorem. Maecenas sit amet quam a metus tincidunt varius. Morbi tortor libero, mattis eu dignissim eget, lobortis sed massa. Phasellus tincidunt erat mi, in consectetur nunc cursus a. Ut eget posuere libero, sit amet feugiat augue.
+        </div>
+    </div>
+    <div class="expando">
+        <div class="title">Filing status and deadlines</div>
+        <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit, leo vel gravida aliquam, tortor orci auctor lacus, eu rutrum libero leo id mi. Integer non lorem urna. Nam eros ipsum, placerat nec massa eget, vehicula auctor nibh. Donec non porta dui. Sed ac neque lorem. Nam eget fringilla leo. Sed eget leo turpis. Nam erat felis, porttitor nec lorem vitae, porta sodales lorem. Maecenas sit amet quam a metus tincidunt varius. Morbi tortor libero, mattis eu dignissim eget, lobortis sed massa. Phasellus tincidunt erat mi, in consectetur nunc cursus a. Ut eget posuere libero, sit amet feugiat augue.</div>
+    </div>
+    <div class="expando">
+        <div class="title">Dependents</div>
+        <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit, leo vel gravida aliquam, tortor orci auctor lacus, eu rutrum libero leo id mi. Integer non lorem urna. Nam eros ipsum, placerat nec massa eget, vehicula auctor nibh. Donec non porta dui. Sed ac neque lorem. Nam eget fringilla leo. Sed eget leo turpis. Nam erat felis, porttitor nec lorem vitae, porta sodales lorem. Maecenas sit amet quam a metus tincidunt varius. Morbi tortor libero, mattis eu dignissim eget, lobortis sed massa. Phasellus tincidunt erat mi, in consectetur nunc cursus a. Ut eget posuere libero, sit amet feugiat augue.</div>
+    </div>
+    <div class="expando">
+        <div class="title">Deductions and credits</div>
+        <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit, leo vel gravida aliquam, tortor orci auctor lacus, eu rutrum libero leo id mi. Integer non lorem urna. Nam eros ipsum, placerat nec massa eget, vehicula auctor nibh. Donec non porta dui. Sed ac neque lorem. Nam eget fringilla leo. Sed eget leo turpis. Nam erat felis, porttitor nec lorem vitae, porta sodales lorem. Maecenas sit amet quam a metus tincidunt varius. Morbi tortor libero, mattis eu dignissim eget, lobortis sed massa. Phasellus tincidunt erat mi, in consectetur nunc cursus a. Ut eget posuere libero, sit amet feugiat augue.</div>
+    </div>
+    <div class="expando">
+        <div class="title">California taxes</div>
+        <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit, leo vel gravida aliquam, tortor orci auctor lacus, eu rutrum libero leo id mi. Integer non lorem urna. Nam eros ipsum, placerat nec massa eget, vehicula auctor nibh. Donec non porta dui. Sed ac neque lorem. Nam eget fringilla leo. Sed eget leo turpis. Nam erat felis, porttitor nec lorem vitae, porta sodales lorem. Maecenas sit amet quam a metus tincidunt varius. Morbi tortor libero, mattis eu dignissim eget, lobortis sed massa. Phasellus tincidunt erat mi, in consectetur nunc cursus a. Ut eget posuere libero, sit amet feugiat augue.</div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
