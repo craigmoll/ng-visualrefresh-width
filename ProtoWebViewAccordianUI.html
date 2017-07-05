@@ -14,6 +14,10 @@
             $('.title').click(function(){
                 $(this).next( ".content" ).slideToggle('fast');
             });
+            $('.more').click(function(){
+                $('<li>Viva ornare mentum neque, ac condimentum?</li><li>Orci varius penatibus et magnis dis parturient montes?</li><li>Lorem ipsum dolor sit ame ctetur adipiscing elit?</li>').insertBefore(this);
+                //$(this).append('<li>link one</li><li>link two</li><li>link three</li>');
+            });
         });
 
 
@@ -21,12 +25,15 @@
 
     </script>
     <style>
-        .expando-container{
+        .expando-container,
+        .answers-container{
             padding:20px;
-            border-top: 1px solid #DFDFDF;
             display:block;
         }
-        div.expando{
+
+
+        div.expando,
+        div.answer{
             border-bottom: 1px solid #DFDFDF;
             padding: 10px 0 10px 0;
             font-size:16px;
@@ -35,11 +42,42 @@
         }
         div.title{
             display:block;
-            color: #34B8F4;
+            color: #666666;
         }
         div.content {
             display:none;
         }
+        ul {
+            list-style-type: none;
+            padding:0;
+            margin:0;
+        }
+        li{
+            color:#34B8F4;
+        }
+        li:hover{
+            text-decoration: underline;
+        }
+        div.answer{
+            color:#34B8F4;
+        }
+        .ask-a-q{
+            display:block;
+            padding: 5px 20px;
+            background-color: #DAF2FD;
+            border-radius: 3px;
+            float: right;
+            color: #34B8F4;
+            font-size: 12px;
+            margin-top:-15px;
+        }
+        h2{
+            font-size: 24px;
+            color: #666666;
+            font-weight: 200;
+            display: inline-block;
+        }
+
     </style>
 
 
@@ -47,30 +85,89 @@
 <body>
 
 <div class="expando-container">
-    <div class="expando">
+ <h2>Topics</h2>
+    <div class="expando" style="border-top: 1px solid #DFDFDF;">
         <div class="title">Getting started</div>
         <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit, leo vel gravida aliquam, tortor orci auctor lacus, eu rutrum libero leo id mi. Integer non lorem urna. Nam eros ipsum, placerat nec massa eget, vehicula auctor nibh. Donec non porta dui. Sed ac neque lorem. Nam eget fringilla leo. Sed eget leo turpis. Nam erat felis, porttitor nec lorem vitae, porta sodales lorem. Maecenas sit amet quam a metus tincidunt varius. Morbi tortor libero, mattis eu dignissim eget, lobortis sed massa. Phasellus tincidunt erat mi, in consectetur nunc cursus a. Ut eget posuere libero, sit amet feugiat augue.
+            <ul>
+                <li>Forgot your TurboTax Online User ID or password?</li>
+                <li>How do I update my account information?</li>
+                <li>Forgot your TurboTax Advantage login?</li>
+                <li class="more">...</li>
+            </ul>
+
         </div>
     </div>
     <div class="expando">
         <div class="title">Filing status and deadlines</div>
-        <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit, leo vel gravida aliquam, tortor orci auctor lacus, eu rutrum libero leo id mi. Integer non lorem urna. Nam eros ipsum, placerat nec massa eget, vehicula auctor nibh. Donec non porta dui. Sed ac neque lorem. Nam eget fringilla leo. Sed eget leo turpis. Nam erat felis, porttitor nec lorem vitae, porta sodales lorem. Maecenas sit amet quam a metus tincidunt varius. Morbi tortor libero, mattis eu dignissim eget, lobortis sed massa. Phasellus tincidunt erat mi, in consectetur nunc cursus a. Ut eget posuere libero, sit amet feugiat augue.</div>
+        <div class="content">
+            <ul>
+                <li>Forgot your TurboTax Online User ID or password?</li>
+                <li>How do I update my account information?</li>
+                <li>Forgot your TurboTax Advantage login?</li>
+                <li class="more">...</li>
+            </ul>
+        </div>
     </div>
     <div class="expando">
         <div class="title">Dependents</div>
-        <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit, leo vel gravida aliquam, tortor orci auctor lacus, eu rutrum libero leo id mi. Integer non lorem urna. Nam eros ipsum, placerat nec massa eget, vehicula auctor nibh. Donec non porta dui. Sed ac neque lorem. Nam eget fringilla leo. Sed eget leo turpis. Nam erat felis, porttitor nec lorem vitae, porta sodales lorem. Maecenas sit amet quam a metus tincidunt varius. Morbi tortor libero, mattis eu dignissim eget, lobortis sed massa. Phasellus tincidunt erat mi, in consectetur nunc cursus a. Ut eget posuere libero, sit amet feugiat augue.</div>
+        <div class="content">
+            <ul>
+                <li>Forgot your TurboTax Online User ID or password?</li>
+                <li>How do I update my account information?</li>
+                <li>Forgot your TurboTax Advantage login?</li>
+                <li class="more">...</li>
+            </ul>
+        </div>
     </div>
     <div class="expando">
         <div class="title">Deductions and credits</div>
-        <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit, leo vel gravida aliquam, tortor orci auctor lacus, eu rutrum libero leo id mi. Integer non lorem urna. Nam eros ipsum, placerat nec massa eget, vehicula auctor nibh. Donec non porta dui. Sed ac neque lorem. Nam eget fringilla leo. Sed eget leo turpis. Nam erat felis, porttitor nec lorem vitae, porta sodales lorem. Maecenas sit amet quam a metus tincidunt varius. Morbi tortor libero, mattis eu dignissim eget, lobortis sed massa. Phasellus tincidunt erat mi, in consectetur nunc cursus a. Ut eget posuere libero, sit amet feugiat augue.</div>
+        <div class="content">
+            <ul>
+                <li>Forgot your TurboTax Online User ID or password?</li>
+                <li>How do I update my account information?</li>
+                <li>Forgot your TurboTax Advantage login?</li>
+                <li class="more">...</li>
+            </ul>
+        </div>
     </div>
     <div class="expando">
         <div class="title">California taxes</div>
-        <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit, leo vel gravida aliquam, tortor orci auctor lacus, eu rutrum libero leo id mi. Integer non lorem urna. Nam eros ipsum, placerat nec massa eget, vehicula auctor nibh. Donec non porta dui. Sed ac neque lorem. Nam eget fringilla leo. Sed eget leo turpis. Nam erat felis, porttitor nec lorem vitae, porta sodales lorem. Maecenas sit amet quam a metus tincidunt varius. Morbi tortor libero, mattis eu dignissim eget, lobortis sed massa. Phasellus tincidunt erat mi, in consectetur nunc cursus a. Ut eget posuere libero, sit amet feugiat augue.</div>
+        <div class="content">
+            <ul>
+                <li>Forgot your TurboTax Online User ID or password?</li>
+                <li>How do I update my account information?</li>
+                <li>Forgot your TurboTax Advantage login?</li>
+                <li class="more">...</li>
+            </ul>
+        </div>
     </div>
 </div>
-
+<div class="answers-container">
+ <h2>Instant answers</h2>
+<a class="ask-a-q">Ask a question</a>
+    <div class="answer" style="border-top: 1px solid #DFDFDF;">
+        What is the earliest I can get my tax refund?
+    </div>
+    <div class="answer">
+        How do I find last year's AGI?
+    </div>
+    <div class="answer">
+        Do I qualify for head of household?
+    </div>
+    <div class="answer">
+        Do I qualify for head of household?
+    </div>
+    <div class="answer">
+        Do I qualify for head of household?
+    </div>
+    <div class="answer">
+        Do I qualify for head of household?
+    </div>
+    <div class="answer">
+        Do I qualify for head of household?
+    </div>
+</div>
 
 
 </body>
